@@ -19,11 +19,12 @@ main {
   margin: 0 auto;
   padding: 40px 20px;
 }
+/*
 ul {
   list-style-type: none;
-  padding: 0; /* Removes default indentation */
-  margin: 0;  /* Removes default spacing */
-}
+  padding: 0;  Removes default indentation 
+  margin: 0;   Removes default spacing 
+}*/
 section {
   background: #fff;
   border-radius: 12px;
@@ -31,10 +32,12 @@ section {
   margin-bottom: 24px;
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
 }
+/*
 section h2 {
   margin-top: 0;
   color: #04AA6D;
 }
+*/
 footer {
   padding: 24px;
   text-align: center;
