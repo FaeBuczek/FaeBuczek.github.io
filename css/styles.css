@@ -41,3 +41,7 @@ footer {
   background: #e8edf4;
   font-size: 0.9rem;
 }
+.container {        /* Requires a height to see vertical centering */
+  text-align: center;    /* Centers text and inline elements horizontally */
+  align-content: center; /* Centers content vertically */
+}
