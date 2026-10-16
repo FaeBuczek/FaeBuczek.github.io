@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Emerson Buczek</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h1>Emerson Buczek</h1>
+        <div id="navbar-placeholder"></div>
+    </header>
+    <main>
+        <!--
+        <div class="image-left-text-right"></div>
+        -->
+        <img src="images/Emerson.jpg" style="width: 350px;" alt="Emerson with blue hair smiling at camera">
+        <h1>Artist Bio</h1>
+        <p>Emerson Buczek is a Twin Cities metro based visual artist focused in 2D media with an interest in technology.
+            He graduated from St Olaf College with a Bachelors of Arts in Studio Art and Computer Science. He uses
+            photography, image editing software, and painting to create works about identity and expression. Emerson has
+            been featured at two different student exhibitions for his artwork. Austin Community College in 2023 with a
+            self portrait, and at St Olaf College Jury Show in 2026. He worked as a Flaten Art Museum Attendant and as
+            the president of St Olaf’s Photography Club. Emerson is working towards how to combine his interest in
+            computers with his art. Currently he is exploring 3D media. His long-term goal is to find the medium that
+            best fits to merge his love for coding with art.</p>
+        <h1>Artist Statement</h1>
+        <p>Emerson Buczek uses identity, morals, and illusions to explore the current experience of technology through
+            their artwork. They care deeply about how people are impacted by social engineering to view their time,
+            resources, their community, and themselves. They appreciate the enjoyment and connection online technologies
+            created, to connect with distant friends, but they also worry about how it impacts their psyche and
+            perception of the world.</p>
+        <p>
+            Emerson uses physical mediums such as painting, cyanotype, pastels, and film photography to contradict the
+            nature of technology and the digital world. They use contrasting hues to make the viewer's eye wander around
+            the artwork with monochrome sections next to bold colors. On the other side, they also explore nature with
+            digital photography to collage the physical world together. They show how people view the world through
+            digital cameras by manipulating work with computer software.
+        </p>
+    </main>
+
+    <!-- Script to load repeated contact -->
+    <script>
+        fetch('elements/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+        fetch('elements/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <footer>
+        <div id="footer-placeholder"></div>
+    </footer>
+</body>
+
+</html>

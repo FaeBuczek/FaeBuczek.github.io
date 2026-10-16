@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Emerson Buczek</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h1>Emerson Buczek</h1>
+        <div id="navbar-placeholder"></div>
+    </header>
+    <main>
+        <h1>Shows</h1>
+        <h2>2026</h2>
+        <h2>2025</h2>
+        <h2>2023</h2>
+
+        
+    </main>
+
+        <!-- Script to load repeated contact -->
+    <script>
+        fetch('elements/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+        fetch('elements/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <footer>
+        <div id="footer-placeholder"></div>
+    </footer>
+</body>
+
+</html>
