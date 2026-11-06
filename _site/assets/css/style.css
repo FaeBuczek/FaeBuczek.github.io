@@ -1000,4 +1000,10 @@ a:hover {
   color: #819198;
 }
 
+.iframe-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically (if the container has height) */
+}
+
 /*# sourceMappingURL=style.css.map */
