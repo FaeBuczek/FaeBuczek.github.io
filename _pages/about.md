@@ -1,8 +1,10 @@
 ---
 layout: default
+title: About
+permalink: /about/
 ---
 
-![Profile photo of Emerson with blue hair staring at camera](assets/images/Emerson.jpg){: width="250" }
+![Profile photo of Emerson with blue hair staring at camera](/assets/images/Emerson.jpg){: width="250" }
 
 # Artist Bio 
 Emerson Buczek is a Twin Cities metro based visual artist focused in 2D media with an interest in technology. He graduated from St Olaf College with a Bachelors of Arts in Studio Art and Computer Science. He uses photography, image editing software, and painting to create works about identity and expression.

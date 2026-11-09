@@ -3,3 +3,13 @@ description: Artist and Programmer <br> Greater Minneapolis-St Paul Area
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-cayman
+
+include:
+  - _pages
+
+defaults:
+  - scope:
+      path: "_pages"
+      type: "pages"
+    values:
+      permalink: /:basename/
