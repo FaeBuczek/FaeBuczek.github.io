@@ -2,3 +2,19 @@
 //     @import "{{ site.theme }}";
 // Then using this theme with jekyll-remote-theme will work fine.
 @import "jekyll-theme-cayman";
+
+
+
+/* Custom class for specific buttons only */
+.btn-custom{
+  background-color: #ff5733; /* your custom background color */
+  border-color: #c70039;     /* your custom border color */
+  color: #ffffff;            /* your custom text color */
+}
+
+.btn-custom:hover {
+  background-color: #c70039;
+  border-color: #900c3f;
+  color: #ffffff;
+  text-decoration: none;
+}

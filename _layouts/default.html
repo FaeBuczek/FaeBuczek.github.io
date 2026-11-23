@@ -22,11 +22,6 @@
   <header class="page-header" role="banner">
     <h1 class="project-name">Emerson Buczek</h1>
     <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline}}</h2>
-    {% if site.show_downloads %}
-    <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-    <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
-    <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
-    {% endif %}
     <a href="/index/" class="btn">Home</a>
     <a href="/about/" class="btn">About</a>
     <a href="/gallery/" class="btn">Gallery</a>
@@ -35,14 +30,29 @@
   </header>
 
   <main id="content" class="main-content" role="main">
-    {{ if site.title == "Gallery"}}
-    <div>
-      <a href="/painting/">Paintings</a>
-      <a href="/drawing/">Drawings</a>
-      <a href="/sculpture/">Sculptures</a>
-      <a href="/photography/">Photography</a>
+    {% if page.url == "/gallery/" %}
+    <!--
+      <div class="page-header" role="banner">
+      -->
+    
+        <a href="/painting/" class="btn custom-btn">
+          <img src="/assets/images/Emerson.jpg" alt="Paintings Icon" class="icon" width="150px" max-width="30px" max-height="auto"><br>
+          Painting
+        </a>
+        <a href="/drawing/" class="btn custom-btn">
+          <img src="/assets/images/Emerson.jpg" alt="Drawings Icon" class="icon" width="150px" max-width="30px" max-height="auto"><br>
+          Drawings</a>
+        <a href="/sculpture/" class="btn custom-btn">
+          <img src="/assets/images/Emerson.jpg" alt="Sculptures Icon" class="icon" width="150px" max-width="30px" max-height="auto"><br>
+          Sculptures</a>
+        <a href="/photography/" class="btn custom-btn">
+          <img src="/assets/images/Emerson.jpg" alt="Photography Icon" class="icon" width="150px" max-width="30px" max-height="auto"><br>
+          Photography</a>
+    <!--
     </div>
-    {{ endif }}
+      -->
+    {% endif %}
+
     {{ content }}
 
     <footer class="site-footer">

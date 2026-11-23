@@ -3,8 +3,21 @@
 
 @import 'jekyll-theme-cayman';
 
+body {
+  background-color: #ffffff;
+}
+
 .iframe-container {
   display: flex;
   justify-content: center; /* Centers horizontally */
   align-items: center;     /* Centers vertically (if the container has height) */
+}
+
+.btn.custom-btn {
+  color: #05358d; /* Default button text color */
+  text-align: center; /* Centers the button text */
+}
+
+.btn.custom-btn:hover {
+  color: #044B68; /* Text color when hovering over the button */
 }
